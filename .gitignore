@@ -11,3 +11,6 @@ venv/
 
 # Test results
 test_results/
+
+# Pycharm
+.idea/
