@@ -23,10 +23,10 @@ This test suite shows examples of how to map Gherkin Scenario Outlines to RobotF
 
 Prerequisites: 
 - python 3 must be installed on your system. 
-- All required python packages are installed on your system or in a "virtual environment".
+- All required python packages are installed on your system or in a "virtual environment" (See https://docs.python.org/3/library/venv.html).
   To install the required packages run `pip install -r requirements.txt`
 
-To run the tests execute commands:  
+To run the tests, execute commands:  
 - `runTest.bat`  to run all tests
 - `runSmokeTest.bat` to run all test cases that are tagged with 'SmokeTest'
 - `runNightTest.bat` to run all test cases that are tagged with 'NightTest'

@@ -4,7 +4,7 @@ Documentation     Feature: Returning location data based on country and zip code
 ...	I want to receive location data matching the country code and zip code I supply.
 ...	So I can use this data to auto-complete forms on my web site.
 
-Resource          ../resources/gherkin_keywords_location_resource.robot
+Resource          ../resources/gherkin_keywords_location_resource.resource
 
 *** Test Cases ***
 Scenario: An existing country and zip code yields the correct place name

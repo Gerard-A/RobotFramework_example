@@ -10,7 +10,7 @@ Documentation     Feature: Returning location data based on country and zip code
 
 Test Template     Scenario: Existing country '${country}' and zip code '${zip_code}' yields the correct place name '${place_name}'
 
-Resource          ../resources/gherkin_keywords.robot
+Resource          ../resources/gherkin_keywords.resource
 
 *** Test Cases ***
 Scenario Outline: Existing country and zip code yields the correct place names
