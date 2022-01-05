@@ -13,12 +13,9 @@ pipeline {
             steps {
                 echo 'Prepare virtualenv and run RobotFramework Tests'
                 bat """
-                   pip list
                    python -m venv venv
                    call venv\\Scripts\\activate.bat
-                   pip list
                    pip install -r requirements.txt
-                   pip list
                    runTest.bat
                 """
                 echo 'Finished RobotFramework Tests'
