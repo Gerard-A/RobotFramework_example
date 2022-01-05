@@ -22,21 +22,21 @@ pipeline {
             }
             post {
         	    always {
-		            script {
+                    script {
 		                step(
-			                [ $class              : 'RobotPublisher',
-			                  outputPath          : 'test_results',
-			                  outputFileName      : '**/output.xml',
-			                  reportFileName      : '**/report.html',
-			                  logFileName         : '**/log.html',
-			                  disableArchiveOutput: false,
-			                  passThreshold       : 0,
-			                  unstableThreshold   : 0,
-			                ]
-		          	    )
-		            }
-	  		    }
-	        }
-	    }
+        	                [ $class              : 'RobotPublisher',
+        	                  outputPath          : 'test_results',
+        	                  outputFileName      : '**/output.xml',
+        	                  reportFileName      : '**/report.html',
+        	                  logFileName         : '**/log.html',
+        	                  disableArchiveOutput: false,
+        	                  passThreshold       : 0,
+        	                  unstableThreshold   : 0,
+        	                ]
+                  	    )
+                    }
+	            }
+            }
+        }
     }
 }
